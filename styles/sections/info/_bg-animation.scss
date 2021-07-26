@@ -1,0 +1,204 @@
+.header-section {
+
+    .bg-animation-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        overflow: hidden;
+        .bar {
+            position: absolute;
+            border: none;
+            &:nth-child(1) {
+                width: 200px;
+                height: 90px;
+                background: #3E3B3B;
+                clip-path: polygon(85% 0, 0% 100%, 75% 78%);
+                animation: bar1 90s ease-in-out infinite;
+            }
+            &:nth-child(2) {
+                width: 100px;
+                height: 90px;
+                background: #686565;
+                clip-path: polygon(85% 0, 10% 100%, 0 51%);
+                animation: bar2 100s ease-in-out infinite;
+            }
+            &:nth-child(3) {
+                width: 150px;
+                height: 200px;
+                background: #0F0F0F;
+                clip-path: polygon(1% 1%, 56% 94%, 100% 100%);
+                animation: bar3 180s ease-in-out infinite;
+            }
+            &:nth-child(4) {
+                width: 150px;
+                height: 200px;
+                background: #181818;
+                clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+                animation: bar4 137s ease-in-out infinite;
+            }
+            &:nth-child(5) {
+                width: 150px;
+                height: 90px;
+                background: #666464;
+                clip-path: polygon(1% 2%, 56% 100%, 100% 76%);
+                animation: bar5 200s ease-in-out infinite;
+
+            }
+            &:nth-child(6) {
+                width: 210px;
+                height: 134px;
+                background: #3E3B3B;
+                clip-path: polygon(1% 100%, 40% 1%, 100% 1%);
+                animation: bar6 120s ease-in-out infinite;
+
+            }
+            &:nth-child(7) {
+                width: 150px;
+                height: 200px;
+                background: #181818;
+                clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+                animation: bar7 120s ease-in-out infinite;
+            }
+            
+
+        }
+
+    }
+}
+
+@keyframes bar1 {
+    0% {
+        left: -10%;
+        top: -10%;
+    } 25% {
+        transform: translate(34%, -20%);
+        left: 34%;
+        top: -20%;
+    } 75% {
+        transform: translate(19%, 73%) rotate(30deg);
+        left: 19%;
+        top: 73%
+    } 100% {
+        transform: translate(0%, 0%);
+        left: -10%;
+        top: -10%;
+    }
+}
+
+@keyframes bar2 {
+    0% {
+        left: -10%;
+        top: 50%;
+    } 25% {
+        transform: translate(34%, -20%);
+        left: 84%;
+        top: 75%;
+    } 75% {
+        transform: translate(19%, 73%) rotate(70deg);
+        left: 32%;
+        top: 30%
+    } 100% {
+        left: -10%;
+        top: 50%;
+    }
+}
+
+@keyframes bar3 {
+    0% {
+        right: -10%;
+        bottom: 80%;
+    } 25% {
+        right: 66%;
+        bottom: -2%;
+    } 50% {
+        transform: rotate(13deg);
+        right: 90%;
+        bottom: 43%;
+    } 75% {
+        right: 30%;
+        bottom: 50%;
+    } 100% {
+        right: -10%;
+        bottom: 80%;
+    }
+}
+
+@keyframes bar4 {
+    0% {
+        right: 0%;
+        bottom: 30%;
+    } 25% {
+        right: 130%;
+        bottom: 80%;
+    } 50% {
+        right: 29%;
+        bottom: 23%;
+    } 75% {
+        right: 43%;
+        bottom: 50%;
+    } 100% {
+        right: 0%;
+        bottom: 30%;
+    }
+}
+
+@keyframes bar5 {
+    0% {
+        right: 20%;
+        bottom: 30%;
+    } 25% {
+        right: 50%;
+        bottom: 80%;
+    } 50% {
+        right: 33%;
+        bottom: -20%;
+    } 75% {
+        right: 43%;
+        bottom: 33%;
+    } 100% {
+        right: 20%;
+        bottom: 30%;
+    }
+}
+
+@keyframes bar6 {
+    0% {
+        right: -10%;
+        top: -10%;
+    } 25% {
+        right: 50%;
+        top: 30%;
+    } 50% {
+        right: 33%;
+        top: 50%;
+    } 75% {
+        right: 43%;
+        top: 67%;
+    } 100% {
+        right: -10%;
+        top: -10%;
+    }
+}
+@keyframes bar7 {
+    0% {
+        right: -10%;
+        top: 90%;
+    } 25% {
+        right: 20%;
+        top: 80%;
+    } 50% {
+        right: 33%;
+        top: 70%;
+    } 75% {
+        right: 93%;
+        top: 87%;
+    } 100% {
+        right: -10%;
+        top: 90%;
+    }
+}
+
+
+

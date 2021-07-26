@@ -1,0 +1,179 @@
+body {
+    background: $color1;
+}
+
+.welcome-anim-info {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    .bg-color-1 {
+        width: 100%;
+        height: 100vh;
+        background: $color2;
+    }
+}
+.footer-content {
+    color: $color2 !important;
+    .footer-link {
+        &:hover {
+            color: $color2;
+        }
+    }
+}
+.header-section {
+    width: 100%;
+    min-height: 100vh;
+    height: 700px;
+    position: relative;
+    @include center();
+    .content-wrapper {
+        position: absolute;
+        bottom: 170px;
+        left: 10%;
+        @include smaller-than-800 {
+            display: none;        
+        }
+        .ofert-heading {
+            font-family: $font4;
+            text-transform: uppercase;
+            font-size: 5vw;
+            line-height: 5vw;
+            position: relative;
+            &::before {
+                width: 100%;
+                height: 2px;
+                left: -110%;
+                content: '';
+                position: absolute;
+                top: 40px;
+                background: #D14848;
+            }
+        }
+    }
+
+    .ofert-slider-wrapper {
+        max-width: 400px;
+        max-height: 400px;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        right: 15%;
+        z-index: 0;
+        @include smaller-than-600 {
+            right: 50%;
+            transform: translateX(50%);
+            top: 20%;
+            max-width: 90%;
+        }
+        .mySwiper2 {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat; 
+
+                    span {
+                        position: absolute;
+                        margin: 10px;
+                        font-family: $font4;
+                        text-transform: uppercase;
+                        font-size: 40px;
+                        line-height: 40px;
+                        color: $color1;
+                        @include smaller-than-425 {
+                            font-size: 30px;
+                        }
+                    }          
+                }
+                .slide1 {
+                    background-image: url('../../../img/ofert-page/ofert-01.jpeg');
+                    
+                }
+                .slide2  {
+                    background-image: url('../../../img/ofert-page/ofert-02.jpg');
+                    
+                }
+                .slide3  {
+                    background-image: url('../../../img/ofert-page/ofert-03.jpg');
+                    
+                }
+                .slide4 {
+                    background-image: url('../../../img/ofert-page/ofert-04.jpg');
+                    
+                }
+                .slide5 {
+                    background-image: url('../../../img/ofert-page/ofert-05.jpeg');
+                    
+                }
+                .slide6 {
+                    background-image: url('../../../img/ofert-page/ofert-06.jpeg');
+                    
+                }
+            }
+        }
+        .mySwiper {
+            @include center();
+            position: absolute;
+            top: 0;
+            right: -50px;
+            height: 400px;
+            @include smaller-than-600 {
+                display: none;
+            }
+            .swiper-wrapper {
+                @include center-column();
+                .swiper-slide {
+                    @include center();
+                    font-family: $font1;
+                    cursor: pointer;
+                    color: $color2;
+                }
+                
+            }
+        }
+        .mySwiper .swiper-slide {
+            opacity: 0.5;
+        }
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+
+    .next-section-button {
+        position: absolute;
+        bottom: 10%;
+        width: 100px;
+        color: $color2;
+        text-decoration: none;
+        font-family: $font3;
+        letter-spacing: 0.27em;
+        text-align: center;
+        
+        &:hover::before {
+            transform: translateY(0);
+            opacity: 1;
+
+        }
+        &::before {
+            transform: translateY(5px);
+            transition: .2s;
+            opacity: 0;
+            width: 100%;
+            height: 1px;
+            content: '';
+            background: $color2;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    
+}
+

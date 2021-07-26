@@ -1,0 +1,241 @@
+.navigation-section {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .navigation-wrapper {
+        width: 100%;
+        height: 100%;
+        @include center-between;
+        padding: 0 20px;
+    }
+    .logo-wrapper {
+        .logo-img {
+            width: 40px;
+        }
+    }
+    .hamburger-wrapper {
+        z-index: 3;
+        
+        .hamburger-button {
+            @include center();
+            border: none;
+            background: transparent;
+            transition: 0.2s;
+            cursor: pointer;
+            span {
+                font-family: $font1;
+                margin-right: 5px;
+                font-size: 16px;
+                color: $color3;
+                transition: .2s;
+            }
+            .open {
+                display: flex;
+            }
+            .close {
+                display: flex;
+            }
+            .fas {
+                font-size: 40px;
+                position: relative;
+                transition: 2s;
+            }
+            &:hover .fas {
+                transform: rotate(360deg);
+                color: $color2;
+            }
+            &:hover span {
+                color: $color2;
+            }
+            .open-close--active {
+                display: none;
+            }
+        }
+        .hamburger-button--active {
+            color: $color1;
+            &:hover span {
+                color: $color1;
+            }
+            &:hover .fas {
+                transform: rotate(360deg);
+                color: $color1;
+            }
+        }
+    }
+    .main-menu-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: $color2;
+        @include center();
+        transform: translateY(-105%);
+        transition: 0.3s;
+        .nav-img-wrapper {
+            max-width: 355px;
+            max-height: 548px;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            background-image: url('../../../img/navigation-img/nav-img-1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 70px;
+            @include smaller-than-880 {
+                display: none;
+            }
+            @include height-900 {
+                max-height: 50%;
+            }
+        }
+
+        .main-menu-list {
+            max-width: 380px;
+            width: 100%;
+            @include center-left-column();
+            list-style: none;
+            @include smaller-than-880() {
+                transform: translateY(-50px);
+                max-width: 90%;
+            }
+            
+            .main-menu-item {
+                width: 100%;
+                position: relative;
+                margin-bottom: 10px;
+                overflow: hidden;
+                cursor: pointer;
+                &::after {
+                    width: 100%;
+                    width: 100%;
+                    height: 1px;
+                    background: $color1;
+                    content: '';
+                    bottom: 7px;
+                    left: 0;
+                    position: absolute;
+                    transform: translateX(-105%);
+                    transition: .4s;
+                }
+                &::before {
+                    width: 100%;
+                    height: 1px;
+                    background: $color3;
+                    content: '';
+                    bottom: 7px;
+                    position: absolute;
+                }
+
+                &:hover::after {
+                    transform: translateX(0%);
+                }
+                &:hover .main-link-item {
+                    color: $color1;
+                }
+
+                .main-link-item {
+                    color: $color3;
+                    font-family: $font4;
+                    text-transform: uppercase;
+                    font-size: 50px;
+                    text-decoration: none;
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    transition: 0.3s;
+                    @include smaller-than-800() {
+                        font-size: 7vw;
+                    }
+                    @include height-900 {
+                        font-size: 5vh;
+                    }
+                    .list-nr {
+                        font-size: 14px;
+                        margin-right: 30px;
+                        transition: 0.3s;
+                    }
+                }
+            }
+            
+        }
+        .close-nav-button {
+            position: absolute;
+            bottom: 10%;
+            height: 50px;
+            border: none;
+            background: transparent;
+            color: $color3;
+            font-family: $font1;
+            @include center();
+            transition: 0.2s;
+            cursor: pointer;
+            &::before {
+                width: 30px;
+                height: 2px;
+                content: '';
+                background: $color3;
+                transform: translateY(0px) rotate(45deg);
+                position: absolute;
+                top: 0;
+                transition: 0.2s;
+            }
+            &::after {
+                width: 30px;
+                height: 2px;
+                content: '';
+                background: $color3;
+                transform: translateY(0px) rotate(-45deg);
+                position: absolute;
+                top: 0;
+                transition: 0.2s;
+            }
+            &:hover {
+                color: $color1;
+            }
+            &:hover::before {
+                background: $color1;
+                transform: translateY(0px) rotate(25deg);
+            }
+            &:hover::after {
+                background: $color1;
+                transform: translateY(0px) rotate(-25deg);
+            }
+        }
+        .nav-social-wrapper {
+            width: 100%;
+            position: absolute;
+            bottom: 5%;
+            @include center();
+            .nav-social-link {
+                text-decoration: none;
+                color: $color1;
+                margin-right: 30px;
+                font-size: 28px;
+                &:last-child {
+                    margin: 0;
+                }
+                &:hover .fa-instagram {
+                    color: rgb(238, 27, 12);
+                }
+                &:hover .fa-facebook-f {
+                    color: #3b5998;
+                }
+                &:hover .fa-snapchat-ghost {
+                    color: #FFFC00;
+                }
+                &:hover .fa-youtube {
+                    color: #c4302b;   
+                }
+            }
+        }
+        
+    }
+    .main-menu--active {
+        transform: translateY(0);
+    }
+}

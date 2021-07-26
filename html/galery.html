@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Lele - galeria</title>
+
+     <!-- font instal -->
+     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&family=Squada+One&family=Tinos&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+     <!-- css instal -->
+     <link rel="stylesheet" href="../styles/app-scss/app.css">
+     <link rel="stylesheet" href="../styles/section-css/galery/galery.css">
+</head>
+<body>
+    
+    <section class="next-section-anim">
+        <div class="bg-color-1"></div>
+        <div class="bg-color-2"></div>
+    </section>
+    
+    <nav class="navigation-section">
+        <div class="navigation-wrapper">
+            <div class="logo-wrapper">
+                <img class="logo-img" src="../img/logo/logo-no-bg.png" alt="logo">
+            </div>
+            <div class="hamburger-wrapper">
+                <button class="hamburger-button">
+                    <span class="open">menu</span>
+                    <span class="close open-close--active">cofnij</span>
+                    <i class="fas fa-compact-disc"></i>
+                </button>
+            </div>
+            <div class="main-menu-wrapper">
+                <div class="nav-img-wrapper"></div>
+                <ul class="main-menu-list">
+                    <li class="main-menu-item" onmouseover="changeImg1()"><a href="javascript:delayForNav('./home-no-anim.html')" class="main-link-item"><span class="list-nr">I</span> start</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg2()"><a href="javascript:delayForNav('./info.html')" class="main-link-item"><span class="list-nr">II</span>informacje</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg3()"><a href="javascript:delayForNav('./cooperation.html')" class="main-link-item"><span class="list-nr">III</span>współpraca</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg4()"><a href="javascript:delayForNav('./ofert.html')" class="main-link-item"><span class="list-nr">IV</span>oferta</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg5()"><a href="javascript:delayForNav('./contact.html')" class="main-link-item"><span class="list-nr">V</span>kontakt</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg6()"><a href="javascript:delayForNav('./galery.html')" class="main-link-item"><span class="list-nr">VI</span>galeria</a></li>
+                </ul>
+                <button class="close-nav-button">
+                    cofnij
+                </button>
+                <div class="nav-social-wrapper">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="header-section">
+        <div id="headerId" class="galery-content-wrapper">
+            <h1 class="galery-heading">wspomnienia</h1>
+        </div>
+
+        
+        <div id="image-cover-modal" class="image-cover-modal">
+            <img id="image-cover-image" class="image-cover-modal-content">
+        </div>
+
+        <!-- ================================= 
+
+            TUTAJ KOPIUJESZ:
+            <img src="../img/galery-page/g-1.jpg" class="galery-img" alt="">
+            I WKLEJASZ ZE ZMIANĄ LICZBY    ^
+                                           ^
+
+         ================================= -->
+        <div class="galery-img-wrapper">
+            <img src="../img/galery-page/g-1.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-2.jpg"  class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-3.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-4.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-5.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-6.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-7.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-8.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-9.jpg"  class="galery-img zoom" alt="">
+            <img src="../img/galery-page/g-10.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-11.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-12.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-13.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-14.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-15.jpg" class="galery-img zoom"  alt="">   
+            <img src="../img/galery-page/g-16.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-17.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-18.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-19.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-20.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-21.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-22.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-23.jpg" class="galery-img zoom"  alt="">
+            <img src="../img/galery-page/g-24.jpg" class="galery-img zoom"  alt="">
+            
+        </div>
+
+        <a href="#headerId" class="go-to-start">
+            do góry
+        </a>
+        
+    </header>
+
+    <section class="welcome-anim-galery">
+        <div class="bg-color-1">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-logo-wrapper">
+            <img src="../img/logo/logo-no-bg.png" alt="logo">
+        </div>
+        <div class="footer-social-wrapper">
+            <a href="#" class="footer-social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <span class="footer-content">
+            &copy; 2016 - 2021  Bartłomiej Mach | djlele.pl - <a href="mailto:bartekmachu@gmail.com" class="footer-link">kontakt</a>
+        </span>
+    </footer>
+
+    <!-- JS instal -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="https://kit.fontawesome.com/786fc2d0ee.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="../js/navigation-script.js"></script>
+    <script src="../js/next-section.js"></script>
+    <script src="../js/welcome-anim-galery.js"></script>
+    <script src="../js/galery-script.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+</html>

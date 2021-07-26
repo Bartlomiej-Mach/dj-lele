@@ -1,0 +1,296 @@
+body {
+    background: $color2;
+}
+
+
+.fa-compact-disc {
+    color: $color1;
+}
+.hamburger-button {
+    
+    &:hover .fas {
+        transform: rotate(360deg);
+        color: $color1 !important;
+    }
+    &:hover span {
+        color: $color1 !important;
+    }
+}
+.welcome-anim-galery {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    .bg-color-1 {
+        width: 100%;
+        height: 100vh;
+        background: $color2;
+        @include center();
+    }
+}
+
+.header-section {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    @include center-column();
+    .zoomed-img-wrapper {
+        width: 100%;
+        height: 100vh;
+        .zoomed-img {
+            width: 80%;
+        }
+    }
+    .galery-content-wrapper {
+        width: 100%;
+        @include center();
+        margin: 120px 0;
+        .galery-heading {
+            color: $color1;
+            font-family: $font4;
+            text-transform: uppercase;
+            font-size: 70px;   
+            @include smaller-than-500 {
+                font-size: 45px;
+            }
+        }
+    }
+    .go-to-start {
+        position: fixed;
+        right: 0;
+        color: $color1;
+        top: 50%;
+        transform: rotate(-90deg);
+        font-family: $font1;
+        text-decoration: none;
+        @include center();
+        @include smaller-than-500 {
+            right: -4%;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            right: -55%;
+            background: $color1;
+            transition: 0.2s;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            right: -57%;
+            background: $color1;
+            clip-path: polygon(0 0, 100% 50%, 0 100%, 11% 50%);
+            transition: 0.2s;
+        }
+        &:hover::before {
+            width: 35px;
+            transform: translateX(5px);
+        } 
+        &:hover::after {
+            
+            transform: translateX(5px);
+        }
+
+    }
+    .galery-img-wrapper {
+        width: 80%;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: -20px;
+            width: 1px;
+            height: 90%;
+            background: $color1;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+
+.footer-section {
+    width: 100%;
+    @include center-column();
+    min-height: 170px;
+    border-top: 1px solid $color1;
+    margin-top: 100px;
+    .footer-logo-wrapper {
+        margin-bottom: 30px;
+        img {
+            width: 34px;
+        }
+    }
+    .footer-social-wrapper {
+        width: 100%;
+        @include center();
+        margin-bottom: 30px;
+        .footer-social-link {
+            text-decoration: none;
+            color: $color1;
+            margin-right: 30px;
+            font-size: 28px;
+            &:last-child {
+                margin: 0;
+            }
+            &:hover .fa-instagram {
+                color: rgb(238, 27, 12);
+            }
+            &:hover .fa-facebook-f {
+                color: #3b5998;
+            }
+            &:hover .fa-snapchat-ghost {
+                color: #FFFC00;
+            }
+            &:hover .fa-youtube {
+                color: #c4302b;   
+            }
+        }
+    }
+    .footer-content {
+        color: $color1;
+        font-family: $font1;
+        font-weight: normal;
+        font-size: 9px;
+        .footer-link {
+            color: $color3;
+            font-family: $font1;
+            font-weight: normal;
+            text-decoration: none;
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+}
+
+
+
+
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $color1;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+}
+ @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+}
+  
+
+
+
+
+
+// #lb-back {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     background: rgba(0, 0, 0, 0.5);
+//     z-index: 10;
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: all ease 0.4s;
+//     @include center();
+    
+//   }
+//   #lb-back.show {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+  
+//   #lb-img {
+//     position: absolute;
+//     width: 80%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+//   #lb-img img {
+//     width: 100%;
+//   }
+  
+
+
+
+
+.image-cover-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: opacity ease 0.3s;
+    pointer-events: none;
+}
+
+.model-shown {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.image-cover-modal-content {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}

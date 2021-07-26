@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Lele - start</title>
+    
+    <!-- font instal -->
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&family=Squada+One&family=Tinos&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+    <!-- css instal -->
+    <link rel="stylesheet" href="../styles/app-scss/app.css">
+    <link rel="stylesheet" href="../styles/section-css/home/home.css">
+
+    <!-- swiper.js css instal -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <div class="welcome-anim-wrapper">
+        <div class="anim-first-wrapper">
+            
+        </div>
+        <div class="anim-second-wrapper"></div>
+    </div>
+
+    <nav class="navigation-section">
+        <div class="navigation-wrapper">
+            <div class="logo-wrapper">
+                <img class="logo-img" src="../img/logo/logo-no-bg.png" alt="logo">
+            </div>
+            <div class="hamburger-wrapper">
+                <button class="hamburger-button">
+                    <span class="open">menu</span>
+                    <span class="close open-close--active">cofnij</span>
+                    <i class="fas fa-compact-disc"></i>
+                </button>
+            </div>
+            <div class="main-menu-wrapper">
+                <div class="nav-img-wrapper"></div>
+                <ul class="main-menu-list">
+                    <li class="main-menu-item" onmouseover="changeImg1()"><a href="javascript:delayForNav('./home-no-anim.html')" class="main-link-item"><span class="list-nr">I</span> start</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg2()"><a href="javascript:delayForNav('./info.html')" class="main-link-item"><span class="list-nr">II</span>informacje</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg3()"><a href="javascript:delayForNav('./cooperation.html')" class="main-link-item"><span class="list-nr">III</span>współpraca</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg4()"><a href="javascript:delayForNav('./ofert.html')" class="main-link-item"><span class="list-nr">IV</span>oferta</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg5()"><a href="javascript:delayForNav('./contact.html')" class="main-link-item"><span class="list-nr">V</span>kontakt</a></li>
+                    <li class="main-menu-item" onmouseover="changeImg6()"><a href="javascript:delayForNav('./galery.html')" class="main-link-item"><span class="list-nr">VI</span>galeria</a></li>
+                </ul>
+                <button class="close-nav-button">
+                    cofnij
+                </button>
+                <div class="nav-social-wrapper">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header-section">
+        <div class="welcome-img-wrapper"></div>
+        <div class="slider-wrapper swiper-container mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+                <div class="swiper-slide slide5"></div>
+                <div class="swiper-slide slide6"></div>
+            </div>
+        </div>
+        <div  thumbsSlider="" class="text-wrapper mySwiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-slide">
+                    <h1>DJ LELE</h1>
+                    <h2>oprawa imprez</h2>
+                </div>
+                <div class="swiper-slide text-slide">
+                    <span>Lele</span>
+                    <h2>Wodzirej</h2>
+                </div>
+                <div class="swiper-slide text-slide">
+                    <span>Krystian</span>
+                    <h2>KONFERANSJER</h2>
+                </div>
+                <div class="swiper-slide text-slide">
+                    <span>Lele</span>
+                    <h2>imprezowicz</h2>
+                </div>
+                <div class="swiper-slide text-slide">
+                    <span>Krystian</span>
+                    <h2>muzyk</h2>
+                </div>
+                <div class="swiper-slide text-slide">
+                    <span>Lele</span>
+                    <h2>muzyk</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-wrapper">
+            <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <button class="mobile-nav-button">
+            MENU
+        </button>
+
+        <div class="second-nav-wrapper">
+            <ul class="second-nav-list">
+                <li class="second-nav-item"><a href="javascript:delay('./info.html')" class="second-link-item">informacje</a></li>
+                <li class="second-nav-item"><a href="javascript:delay('./cooperation.html')" class="second-link-item">współpraca</a></li>
+                <li class="second-nav-item"><a href="javascript:delay('./ofert.html')" class="second-link-item">oferta</a></li>
+                <li class="second-nav-item"><a href="javascript:delay('./contact.html')" class="second-link-item">kontakt</a></li>
+                <li class="second-nav-item"><a href="javascript:delay('./galery.html')" class="second-link-item">galeria</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="next-section-anim">
+        <div class="bg-color-1"></div>
+        <div class="bg-color-2"></div>
+    </section>
+
+    <!-- icon instal -->
+    <script src="https://kit.fontawesome.com/786fc2d0ee.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="../js/navigation-script.js"></script>
+    <script src="../js/home-slider.js"></script>
+    <script src="../js/welcome-anim-second-home.js"></script>
+    <script src="../js/next-section.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+</html>

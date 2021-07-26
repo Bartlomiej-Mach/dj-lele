@@ -1,0 +1,22 @@
+.footer-secion {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 20px 15px;
+    .footer-content {
+        color: $color1;
+        font-family: $font1;
+        font-weight: normal;
+        font-size: 9px;
+        .footer-link {
+            color: $color3;
+            font-family: $font1;
+            font-weight: normal;
+            text-decoration: none;
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+    
+}
