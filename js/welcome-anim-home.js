@@ -1,16 +1,13 @@
 const tl = gsap.timeline();
 
 tl.to('.loader-1', {
-    border: '30px solid #fff',
     duration: .5,
     delay: .5,
+    opacity: 1,
 });
 
 
-tl.to('.bar', {
-    opacity: 1,
-    duration: .5,    
-}, "<");
+
 
 tl.to('.anim-first-wrapper', {
     y: -300,

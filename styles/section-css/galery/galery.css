@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation-section .logo-wrapper .logo-img {
-  width: 40px;
+  width: 60px;
 }
 
 .navigation-section .hamburger-wrapper {
@@ -417,7 +417,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2C2B2B), color-stop(77.2%, #000000));
+  background: linear-gradient(360deg, #2C2B2B 0%, #000000 77.2%);
 }
 
 .fa-compact-disc {

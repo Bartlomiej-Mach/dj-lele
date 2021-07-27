@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation-section .logo-wrapper .logo-img {
-  width: 40px;
+  width: 60px;
 }
 
 .navigation-section .hamburger-wrapper {
@@ -489,11 +489,6 @@ body {
 }
 
 .welcome-anim-wrapper .anim-first-wrapper .loader-1 {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #706E6E;
-  border-radius: 50%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,49 +498,38 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 354px;
+  height: 354px;
+  position: relative;
+  opacity: 0;
 }
 
 .welcome-anim-wrapper .anim-first-wrapper .loader-1::before {
-  width: 80px;
-  height: 80px;
-  border: 5px solid transparent;
-  border-top: 5px solid #000;
-  border-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  width: 40px;
+  height: 115px;
   position: absolute;
+  background: #000;
+  right: 57px;
+  bottom: 95px;
   content: '';
-  opacity: 0;
-  -webkit-animation: anim-cd 0.3s forwards 1.4s;
-          animation: anim-cd 0.3s forwards 1.4s;
+  -webkit-animation: showText 0.4s forwards 1s;
+          animation: showText 0.4s forwards 1s;
 }
 
 .welcome-anim-wrapper .anim-first-wrapper .loader-1::after {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
+  width: 100px;
+  height: 47px;
+  position: absolute;
+  background: #000;
+  left: 49px;
+  bottom: 88px;
   content: '';
-  opacity: 0;
-  -webkit-animation: anim-cd 0.3s forwards 1s;
-          animation: anim-cd 0.3s forwards 1s;
-  position: absolute;
+  -webkit-animation: showText 0.4s forwards 1.2s;
+          animation: showText 0.4s forwards 1.2s;
 }
 
-.welcome-anim-wrapper .anim-first-wrapper .loader-1 .bar {
-  position: absolute;
-  color: #fff;
-  font-family: "Squada One", cursive;
-  font-size: 120px;
-  opacity: 0;
-}
-
-.welcome-anim-wrapper .anim-first-wrapper .loader-1 .bar1 {
-  left: -350%;
-}
-
-.welcome-anim-wrapper .anim-first-wrapper .loader-1 .bar2 {
-  right: -350%;
+.welcome-anim-wrapper .anim-first-wrapper .loader-1 img {
+  width: 100%;
 }
 
 .welcome-anim-wrapper .anim-second-wrapper {
@@ -877,21 +861,21 @@ body {
   }
 }
 
-@-webkit-keyframes anim-cd {
+@-webkit-keyframes showText {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    width: 0;
   }
 }
 
-@keyframes anim-cd {
+@keyframes showText {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    width: 0;
   }
 }
 /*# sourceMappingURL=home.css.map */

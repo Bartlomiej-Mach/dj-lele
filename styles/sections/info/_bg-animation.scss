@@ -11,54 +11,45 @@
             position: absolute;
             border: none;
             &:nth-child(1) {
-                width: 200px;
-                height: 90px;
-                background: #3E3B3B;
-                clip-path: polygon(85% 0, 0% 100%, 75% 78%);
+                
+                color: #3E3B3B;
+                font-size: 50px;
                 animation: bar1 90s ease-in-out infinite;
             }
             &:nth-child(2) {
-                width: 100px;
-                height: 90px;
-                background: #686565;
-                clip-path: polygon(85% 0, 10% 100%, 0 51%);
+                
+                color: #686565;
+                font-size: 70px;
                 animation: bar2 100s ease-in-out infinite;
             }
             &:nth-child(3) {
-                width: 150px;
-                height: 200px;
-                background: #0F0F0F;
-                clip-path: polygon(1% 1%, 56% 94%, 100% 100%);
+                
+                color: #0F0F0F;
+                font-size: 43px;
                 animation: bar3 180s ease-in-out infinite;
             }
             &:nth-child(4) {
-                width: 150px;
-                height: 200px;
-                background: #181818;
-                clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+                
+                color: #181818;
+                font-size: 54px;
                 animation: bar4 137s ease-in-out infinite;
             }
             &:nth-child(5) {
-                width: 150px;
-                height: 90px;
-                background: #666464;
-                clip-path: polygon(1% 2%, 56% 100%, 100% 76%);
+                color: #666464;
+                font-size: 30px;
                 animation: bar5 200s ease-in-out infinite;
 
             }
             &:nth-child(6) {
-                width: 210px;
-                height: 134px;
-                background: #3E3B3B;
-                clip-path: polygon(1% 100%, 40% 1%, 100% 1%);
+                
+                color: #3E3B3B;
+                font-size: 26px;
                 animation: bar6 120s ease-in-out infinite;
 
             }
             &:nth-child(7) {
-                width: 150px;
-                height: 200px;
-                background: #181818;
-                clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+                color: #181818;
+                font-size: 39px;
                 animation: bar7 120s ease-in-out infinite;
             }
             
@@ -202,3 +193,68 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+
+&:nth-child(1) {
+    width: 200px;
+    height: 90px;
+    background: #3E3B3B;
+    clip-path: polygon(85% 0, 0% 100%, 75% 78%);
+    animation: bar1 90s ease-in-out infinite;
+}
+&:nth-child(2) {
+    width: 100px;
+    height: 90px;
+    background: #686565;
+    clip-path: polygon(85% 0, 10% 100%, 0 51%);
+    animation: bar2 100s ease-in-out infinite;
+}
+&:nth-child(3) {
+    width: 150px;
+    height: 200px;
+    background: #0F0F0F;
+    clip-path: polygon(1% 1%, 56% 94%, 100% 100%);
+    animation: bar3 180s ease-in-out infinite;
+}
+&:nth-child(4) {
+    width: 150px;
+    height: 200px;
+    background: #181818;
+    clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+    animation: bar4 137s ease-in-out infinite;
+}
+&:nth-child(5) {
+    width: 150px;
+    height: 90px;
+    background: #666464;
+    clip-path: polygon(1% 2%, 56% 100%, 100% 76%);
+    animation: bar5 200s ease-in-out infinite;
+
+}
+&:nth-child(6) {
+    width: 210px;
+    height: 134px;
+    background: #3E3B3B;
+    clip-path: polygon(1% 100%, 40% 1%, 100% 1%);
+    animation: bar6 120s ease-in-out infinite;
+
+}
+&:nth-child(7) {
+    width: 150px;
+    height: 200px;
+    background: #181818;
+    clip-path: polygon(93% 1%, 19% 100%, 76% 91%);
+    animation: bar7 120s ease-in-out infinite;
+}
+
+
+*/

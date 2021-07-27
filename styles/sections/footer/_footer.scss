@@ -1,8 +1,9 @@
 .footer-secion {
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    margin: 20px 15px;
+    left: 0;
+    padding: 20px 15px;
     .footer-content {
         color: $color1;
         font-family: $font1;
