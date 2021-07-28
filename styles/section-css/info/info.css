@@ -395,8 +395,8 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   position: fixed;
   top: -250%;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 10;
 }
 

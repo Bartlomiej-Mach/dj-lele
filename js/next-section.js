@@ -7,12 +7,12 @@ function nextSection () {
 
 //delay of home nav
 function delay (URL) {
-    setTimeout( function() { window.location = URL }, 1100 );
+    setTimeout( function() { window.location = URL }, 800 );
 }
 
 //delay for main nav links
 function delayForNav (URL) {
-    setTimeout( function() { window.location = URL }, 1400 );
+    setTimeout( function() { window.location = URL }, 1000 );
 }
 
 
@@ -33,6 +33,13 @@ if(secondNavBtn) {
         element.addEventListener('click', nextSection);
     });   
 };
+
+//logo - button 
+const logoWrapper = document.querySelector('.logo-wrapper');
+
+logoWrapper.addEventListener('click', nextSection);
+
+
 //contact btn in info secion
 const contactBtn = document.querySelector('.contact-link');
 if(contactBtn) {
