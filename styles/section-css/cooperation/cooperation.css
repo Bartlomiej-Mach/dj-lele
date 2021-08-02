@@ -395,8 +395,8 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   position: fixed;
   top: -250%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   z-index: 10;
 }
 
@@ -577,8 +577,8 @@ body {
   content: '';
   position: absolute;
   right: -28px;
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-1.8px);
+          transform: translateY(-1.8px);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background: #fff;
@@ -653,6 +653,7 @@ body {
 .header-section .row-wrapper--1 .row-1__cooperation-logos-wrapper .grid-container .grid-item {
   width: 100%;
   height: 120px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,12 +681,14 @@ body {
 }
 
 .header-section .row-wrapper--1 .row-1__cooperation-logos-wrapper .grid-container .grid-item .coop-team-link .team-name {
+  text-align: center;
   font-family: "Spartan", sans-serif;
+  width: 110%;
   position: absolute;
   color: #fff;
   text-decoration: none;
   font-size: 80%;
-  bottom: 0;
+  bottom: -10px;
   opacity: 0;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
