@@ -625,6 +625,7 @@ body {
   position: absolute;
   left: 15%;
   top: 50%;
+  z-index: 2;
   color: #fff;
   font-family: "Spartan", sans-serif;
   font-weight: medium;

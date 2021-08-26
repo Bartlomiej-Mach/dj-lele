@@ -131,6 +131,7 @@ body {
                     position: absolute;
                     left: 15%;
                     top: 50%;
+                    z-index: 2;
                     @include smaller-than-800() {
                         left: 5%;
                     }
