@@ -57,7 +57,7 @@ tl.to('.welcome-img-wrapper', {
 
 
 //text fade up 
-tl.from('.text-wrapper', {
+tl.from('.text-slide', {
     y: 100,
     opacity: 0, 
 });

@@ -69,7 +69,7 @@ tl.from('.mobile-nav-button', {
 })
 
 //text fade up 
-tl.from('.text-wrapper', {
+tl.from('.text-slide', {
     y: 100,
     opacity: 0, 
 });

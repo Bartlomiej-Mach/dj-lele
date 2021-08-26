@@ -60,6 +60,7 @@ body {
         position: absolute;
         right: 15%;
         z-index: 0;
+        overflow: hidden;
         @include smaller-than-600 {
             right: 50%;
             transform: translateX(50%);
@@ -123,6 +124,7 @@ body {
             top: 0;
             right: -50px;
             height: 400px;
+            
             @include smaller-than-600 {
                 display: none;
             }
