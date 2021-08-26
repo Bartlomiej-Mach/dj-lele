@@ -99,6 +99,9 @@ body {
     .galery-img-wrapper {
         width: 80%;
         position: relative;
+        .galery-img {
+            cursor: pointer;
+        }
         &::before {
             position: absolute;
             left: -20px;

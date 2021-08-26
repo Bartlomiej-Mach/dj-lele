@@ -578,6 +578,10 @@ body {
   position: relative;
 }
 
+.header-section .galery-img-wrapper .galery-img {
+  cursor: pointer;
+}
+
 .header-section .galery-img-wrapper::before {
   position: absolute;
   left: -20px;
