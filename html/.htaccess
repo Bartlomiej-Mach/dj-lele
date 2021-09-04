@@ -3,7 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteRule djlele index.html
-RewriteRule strona-glowna home.html
-RewriteRule strona-glowna-2 home-no-anim.html
+RewriteRule home home.html
+RewriteRule home-no-anim home-no-anim.html
 
 
