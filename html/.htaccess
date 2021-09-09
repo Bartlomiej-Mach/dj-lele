@@ -5,7 +5,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 
-Options +FollowSymLinks -MultiViews
-RewriteBase /
+RewriteEngine on
 
-RewriteRule ^html/(.*)$ /$1 [L,NC,R]
+RewriteCond %{THE_REQUEST} " /html(/\S*)"
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{DOCUMENT_ROOT}/html/$1-f
+RewriteRule ^(.+)$ /html/$1 [L]
