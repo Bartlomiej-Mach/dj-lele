@@ -5,4 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 
+Options +FollowSymLinks -MultiViews
+RewriteBase /
 
+RewriteRule ^html/(.*)$ /$1 [L,NC,R]
