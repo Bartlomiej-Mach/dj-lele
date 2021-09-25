@@ -12,7 +12,7 @@ tl.to('.loader-1', {
 tl.to('.anim-first-wrapper', {
     y: -300,
     duration: .4,
-    delay: 0.2,
+    delay: 1.6,
     opacity: 0,
 });
 
