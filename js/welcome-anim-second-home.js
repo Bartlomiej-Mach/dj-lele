@@ -13,20 +13,20 @@ tl.to('.anim-second-wrapper', {
 }, "<");
 tl.to('.anim-second-wrapper', {
     y: 0,
-    duration: 0.5,
+    duration: 0.4,
 });
 tl.to('.anim-second-wrapper', {
     y: '-105%',
-    duration: 0.2,
+    duration: 0.4,
 });
 tl.to('.welcome-anim-wrapper', {
-    duration: .2,
+    duration: .4,
     y: '-105%',
 });
 
 tl.to('.welcome-anim-wrapper', {
-    duration: .2,
-    delay: .3,
+    duration: .4,
+    delay: .4,
     display: 'none',
 });
 
@@ -36,23 +36,23 @@ tl.to('.welcome-anim-wrapper', {
 
 //img animation 
 tl.from('.welcome-img-wrapper', {
-    duration: .2,
+    duration: .5,
     y: 300,
 }, 1.4);
 
 tl.to('.welcome-img-wrapper', {
     width: '80%',
-    duration: .2,
+    duration: .4,
     ease: 'in-out',
 });
 tl.to('.welcome-img-wrapper', {
     height: '85%',
-    duration: .2,
+    duration: .5,
     ease: 'in-out',
 });
 tl.to('.welcome-img-wrapper', {
     display: 'none',
-    delay: .2,
+    delay: .3,
 });
 
 
