@@ -22,20 +22,20 @@ tl.to('.anim-second-wrapper', {
 }, "<");
 tl.to('.anim-second-wrapper', {
     y: 0,
-    duration: 0.5,
+    duration: 0.2,
 });
 tl.to('.anim-second-wrapper', {
     y: '-105%',
-    duration: 0.4,
+    duration: 0.2,
 });
 tl.to('.welcome-anim-wrapper', {
-    duration: .5,
+    duration: .2,
     y: '-105%',
 });
 
 tl.to('.welcome-anim-wrapper', {
-    duration: .5,
-    delay: .5,
+    duration: .2,
+    delay: .3,
     display: 'none',
 });
 
@@ -45,23 +45,23 @@ tl.to('.welcome-anim-wrapper', {
 
 //img animation 
 tl.from('.welcome-img-wrapper', {
-    duration: .5,
+    duration: .2,
     y: 300,
 }, 3.8);
 
 tl.to('.welcome-img-wrapper', {
     width: '80%',
-    duration: .4,
+    duration: .2,
     ease: 'in-out',
 });
 tl.to('.welcome-img-wrapper', {
     height: '85%',
-    duration: .5,
+    duration: .2,
     ease: 'in-out',
 });
 tl.to('.welcome-img-wrapper', {
     display: 'none',
-    delay: .3,
+    delay: .2,
 });
 
 tl.from('.mobile-nav-button', {
