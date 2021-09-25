@@ -13,20 +13,20 @@ tl.to('.anim-second-wrapper', {
 }, "<");
 tl.to('.anim-second-wrapper', {
     y: 0,
-    duration: 0.4,
+    duration: 0.5,
 });
 tl.to('.anim-second-wrapper', {
     y: '-105%',
     duration: 0.4,
 });
 tl.to('.welcome-anim-wrapper', {
-    duration: .4,
+    duration: .5,
     y: '-105%',
 });
 
 tl.to('.welcome-anim-wrapper', {
-    duration: .4,
-    delay: .4,
+    duration: .5,
+    delay: .5,
     display: 'none',
 });
 
@@ -42,14 +42,14 @@ tl.from('.welcome-img-wrapper', {
 
 tl.to('.welcome-img-wrapper', {
     width: '80%',
-    duration: .4,
+    duration: .2,
     ease: 'in-out',
 });
 tl.to('.welcome-img-wrapper', {
     height: '85%',
-    duration: .5,
+    duration: .3,
     ease: 'in-out',
-});
+}, '<');
 tl.to('.welcome-img-wrapper', {
     display: 'none',
     delay: .3,
