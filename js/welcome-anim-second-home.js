@@ -38,7 +38,7 @@ tl.to('.welcome-anim-wrapper', {
 tl.from('.welcome-img-wrapper', {
     duration: .5,
     y: 300,
-}, 1.4);
+}, .3);
 
 tl.to('.welcome-img-wrapper', {
     width: '80%',
